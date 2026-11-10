@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Beginner walkthrough
+    url: https://github.com/Sujitsarkar16/phasegate/blob/main/BEGINNER_GUIDE.md
+    about: Learn the workflow with a small runnable example.
+  - name: Report a security vulnerability privately
+    url: https://github.com/Sujitsarkar16/phasegate/security/advisories/new
+    about: Keep sensitive security reports out of public issues.

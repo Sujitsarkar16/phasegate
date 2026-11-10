@@ -1,0 +1,25 @@
+name: Behavioral checks
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node: [18, 22, 24]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm test
+      - name: Verify the beginner walkthrough
+        run: |
+          npm run demo:init
+          node bin/phasegate.js validate examples/beginner-demo/Implementation_Plan
+          node bin/phasegate.js start P00 examples/beginner-demo/Implementation_Plan --owner ci-demo
+          node bin/phasegate.js verify P00 examples/beginner-demo/Implementation_Plan --owner ci-demo
+      - run: npm pack --dry-run

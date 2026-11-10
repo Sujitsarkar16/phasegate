@@ -1,0 +1,16 @@
+name: Feature or documentation request
+description: Suggest an improvement or tell us where the workflow is confusing.
+title: "[Idea]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe your use case or the step you found difficult to understand.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: Explain what would help, with an example if possible.

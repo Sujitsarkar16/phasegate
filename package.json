@@ -1,0 +1,42 @@
+{
+  "name": "agentic-phase-gate",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Evidence-backed phase workflows for AI-assisted software development",
+  "main": "lib/index.js",
+  "bin": {
+    "phasegate": "./bin/phasegate.js",
+    "agentic-phase-gate": "./bin/phasegate.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "demo:init": "node examples/create-demo.mjs"
+  },
+  "keywords": [
+    "ai",
+    "agentic",
+    "llm",
+    "phase-gate",
+    "codex",
+    "antigravity",
+    "claude-code",
+    "cursor",
+    "autonomous-agents",
+    "stage-gate",
+    "software-engineering"
+  ],
+  "author": "Satyabodhi AI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sujitsarkar16/phasegate.git"
+  },
+  "homepage": "https://github.com/Sujitsarkar16/phasegate#readme",
+  "bugs": {
+    "url": "https://github.com/Sujitsarkar16/phasegate/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
